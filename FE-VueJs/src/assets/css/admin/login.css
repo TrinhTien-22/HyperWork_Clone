@@ -1,0 +1,123 @@
+.log_in_admin {
+    display: flex;
+    justify-content: center;
+    display: flex;
+    height: 100%;
+  }
+  .back_ground_FF5900 {
+    height: 100%;
+    background-color: #ff5900;
+  }
+  .log_in_content {
+    width: 45%;
+    height: 100%;
+    background-color: white;
+    padding: 70px;
+    margin: 10px 0 50px 0;
+    border-radius: 20px;
+  }
+  .input_form_admin {
+    margin: 20px 0 20px 0;
+  }
+  .input_form_admin label {
+    font-size: 16px;
+    font-weight: 700;
+  }
+  .header_login img {
+    margin-top: -40px;
+  }
+  .header_login h3 {
+    font-weight: 800;
+    color: #002e60;
+  }
+  .header_login {
+    text-align: center;
+  }
+  
+  .admin_input_box {
+    padding: 10px;
+    display: flex;
+    border: 1px solid rgb(87, 86, 86);
+    border-radius: 10px;
+  }
+  .admin_input_box input {
+    margin-left: 10px;
+    border: none;
+    padding: 5px;
+    outline: none;
+  }
+  
+  .admin_input_box img {
+    height: 20px;
+    margin-top: 5px;
+  }
+  .admin_remember {
+    display: flex;
+    margin: 20px 0 20px 10px;
+    height: 30px;
+  }
+  .admin_btn_form {
+    background-color: #ff5900;
+    width: 100%;
+    border: none;
+    padding: 10px;
+    font-size: 20px;
+    font-weight: 700;
+    color: white;
+    border-radius: 5px;
+  }
+  .admin_btn_form:hover {
+    background-color: white;
+    border: 1px solid #ff5900;
+    color: #ff5900;
+  }
+  .admin_remember a {
+    text-decoration: none;
+    color: #002e60;
+    font-weight: 700;
+    font-size: 16px;
+    margin-left: 90px;
+  }
+  .admin_remember_account {
+    margin-left: -10px;
+  }
+  
+  input[type="checkbox"] {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+  }
+  
+  /* Style the custom checkbox */
+  .custom-checkbox-label {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  .custom-checkbox {
+    width: 20px;
+    height: 20px;
+    margin-right: 8px;
+    border: 1px solid orange; /* Viền màu cam */
+    border-radius: 4px;
+    background-color: white; /* Nền trắng */
+    cursor: pointer;
+  }
+  
+  /* Style the checkmark inside the checkbox */
+  .custom-checkbox:checked {
+    background-color: orange; /* Nền trắng khi được chọn */
+  }
+  
+  .custom-checkbox:checked::after {
+    content: "\2713"; /* Dấu tích Unicode */
+    color: white; /* Màu chữ trắng */
+    font-size: 14px;
+    line-height: 20px;
+    text-align: center;
+  }
+  .admin_show_hide {
+    margin-left: 150px;
+  }

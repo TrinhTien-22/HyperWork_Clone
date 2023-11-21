@@ -1,0 +1,135 @@
+.dashboard_header {
+    width: 100%;
+    display: flex;
+  }
+  
+  .dashboard_overview_content {
+    width: 100%;
+  }
+  .dashboard_overview_flex {
+    display: flex;
+    width: 100%;
+  }
+  .admin_search {
+    margin-left: 500px;
+    width: 31%;
+    border: 1px solid #e3e3e3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 7px 16px 7px 16px;
+    border-radius: 5px;
+  }
+  .admin_btn_search {
+    border: none;
+    background: unset;
+  }
+  .admin_search input {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 17px;
+    letter-spacing: 0em;
+    text-align: left;
+    outline: unset;
+    border: none;
+    width: 100%;
+  }
+  .dashboard_title {
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: left;
+  }
+  .dashboard_num {
+    margin: 14px 0px 5px 0px;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 29px;
+    letter-spacing: 0em;
+    text-align: left;
+  }
+  .dashboard_revenue_revenune {
+    color: aliceblue;
+    width: 30%;
+  
+    padding: 20px 0 0 50px;
+    margin: 20px;
+    height: 180px;
+    border-radius: 10px;
+    background-color: #ff5900;
+    box-shadow: 5px 0 10px rgba(0, 0, 0, 0.3);
+  }
+  .dashboard_revenue_service {
+    width: 30%;
+  
+    margin: 20px;
+    padding: 20px 0 0 50px;
+    border-radius: 10px;
+    background-color: #fdccb2;
+    box-shadow: 5px 0 10px rgba(0, 0, 0, 0.3);
+  }
+  .dashboard_revenue_shipping {
+    width: 30%;
+  
+    margin: 20px;
+    padding: 20px 0 0 50px;
+    border-radius: 10px;
+    background-color: #fce5d9;
+    box-shadow: 5px 0 10px rgba(0, 0, 0, 0.3);
+  }
+  
+  .dashboard_overview_buyers {
+    width: 30%;
+  
+    margin: 20px;
+    padding: 20px 0 0 50px;
+    border-radius: 10px;
+    background-color: #e9ecf8;
+    box-shadow: 5px 0 10px rgba(0, 0, 0, 0.3);
+  }
+  .dashboard_overview_completed {
+    width: 30%;
+  
+    margin: 20px;
+    padding: 20px 0 0 50px;
+    border-radius: 10px;
+    background-color: #00c8081a;
+    box-shadow: 5px 0 10px rgba(0, 0, 0, 0.3);
+  }
+  .order_analysis_02{
+    display: flex;
+    width: 100%;
+  }
+  .order_analysis_03{
+    display: flex;
+    width: 100%;
+  }
+  .box_order_02 {
+    border: 1px solid rgb(106, 106, 106);
+    display: flex;
+    width: 46%;
+    margin: 10px;
+    padding: 30px;
+    border-radius: 10px;
+  }
+  .box_order_02 img{
+    height: 60px;
+  }
+  .box_order_02 p{
+    margin: 5px 0 0 10px;
+  }
+  .box_order_03{
+    border: 1px solid rgb(88, 87, 87);
+    display: flex;
+    width: 30%;
+    padding: 30px;
+    margin: 10px;
+    border-radius: 10px;
+  }
+  .box_order_03 img{
+    height: 60px;
+  }
+  .box_order_03 p{
+    margin: 5px 0 0 10px;
+  }
