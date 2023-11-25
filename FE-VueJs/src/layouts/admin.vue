@@ -114,6 +114,7 @@ body {
   box-shadow: 5px 0 10px rgba(0, 0, 0, 0.3);
   position: fixed;
 }
+
 .logoutconfirm {
   position: absolute;
   padding: 40px;

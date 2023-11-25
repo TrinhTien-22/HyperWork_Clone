@@ -33,8 +33,7 @@
             class="form-control"
             placeholder="Image Menu"
             aria-describedby="helpId"
-            @change="nameimage()"
-            accept="image/*"
+            @change="nameimage"
             ref="imageInput"
           />
         </div>
@@ -89,15 +88,16 @@ export default {
     };
   },
   methods: {
-    nameimage() {
+    nameimage(event) {
       const input = this.$refs.imageInput;
       if (input && input.files && input.files.length > 0) {
         this.menuData.image = input.files[0];
+        console.log(this.menuData.image);
       } else {
         console.error("Files not found.");
       }
+      // this.menuData.image = event.target.files[0];
     },
-
     addMenu() {
       const accessToken = localStorage.getItem("access_token");
 

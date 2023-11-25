@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\Admin\AdminMenu;
+use App\Http\Controllers\Admin\AdminProducts;
 use App\Http\Controllers\Admin\LoginController;
 use App\Models\Admin;
 use Illuminate\Http\Request;
@@ -31,4 +32,10 @@ Route::middleware(['auth:apiadmin'])->group(function () {
     Route::post('/admin/menu/add', [AdminMenu::class, 'addmenu'])->name('add.menu');
     Route::get('/admin/menu/get', [AdminMenu::class, 'getmenu'])->name('get.menu');
     Route::post('/admin/menu/update/{id}', [AdminMenu::class, 'updatemenu'])->name('update.menu');
+    Route::delete('/admin/menu/delete/{id}', [AdminMenu::class, 'deletemenu'])->name('delete.menu');
+
+    Route::post('/admin/products/add', [AdminProducts::class, 'addproduct'])->name('add.product');
+    Route::get('/admin/products/get', [AdminProducts::class, 'getProducts'])->name('get.products');
+    Route::post('/admin/products/update/{id}', [AdminProducts::class, 'updateproduct'])->name('update.product');
+    Route::delete('/admin/products/delete/{id}', [AdminProducts::class, 'deleteproduct'])->name('delete.product');
 });

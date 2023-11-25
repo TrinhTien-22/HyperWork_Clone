@@ -6,7 +6,9 @@ import { Button, Input, Menu, List, Select } from "ant-design-vue";
 import "bootstrap/dist/css/bootstrap.css";
 import "bootstrap/dist/js/bootstrap.js";
 import router from "./routes/index.js";
+
 import axios from "axios";
+
 window.axios = axios;
 import { createPinia } from "pinia";
 const pinia = createPinia();

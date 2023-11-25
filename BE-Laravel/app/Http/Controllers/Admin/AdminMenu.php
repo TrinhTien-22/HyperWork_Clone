@@ -15,7 +15,7 @@ class AdminMenu extends Controller
         $data = $request->validate([
             'name' => 'required|string',
             'description' => 'required|string',
-            'image' => 'required|image|mimes:jpeg,png,jpg,gif,svg|max:2048',
+            'image' => 'required|image|mimes:jpeg,png,jpg,gif,svg',
             'active' => 'required|string'
         ]);
         if ($request->hasFile('image')) {
@@ -59,5 +59,15 @@ class AdminMenu extends Controller
         }
         $menuid->save();
         return response()->json(['message' => 'Menu update success !']);
+    }
+    public function deletemenu($id)
+    {
+        $menu = Menu::find($id);
+        $filePath = public_path($menu->image);
+        if (file_exists($filePath)) {
+            unlink($filePath);
+        }
+        $menu->delete();
+        return response()->json(['message' => 'Menu DELETE Success']);
     }
 }
